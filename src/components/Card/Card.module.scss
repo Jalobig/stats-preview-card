@@ -1,0 +1,75 @@
+.card {
+  background-color: var(--card-background);
+  max-width: 70rem;
+  margin: 6rem auto;
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  @media only screen and (max-width: 950px) {
+    flex-direction: column;
+    max-width: 90%;
+  }
+  &__info {
+    padding: 4rem;
+    @media only screen and (max-width: 950px) {
+      padding: 2rem;
+      text-align: center;
+    }
+  }
+  &__heading--1 {
+    color: var(--main-heading);
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    span {
+      color: var(--color-accent);
+    }
+    @media only screen and (max-width: 950px) {
+      font-size: 1.5rem;
+    }
+  }
+  &__stats-heading--1 {
+    color: var(--main-heading);
+    margin-bottom: 0.3rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  &__heading--3 {
+    color: var(--stat-headings);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-top: 0;
+  }
+  &__paragraph {
+    color: var(--main-paragraph);
+    margin: 2rem 0 3rem 0;
+    line-height: 1.5;
+    font-size: 1rem;
+    width: 90%;
+    @media only screen and (max-width: 950px) {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    @media only screen and (max-width: 950px) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  &__img--desktop,
+  &__img--mobile {
+    height: 100%;
+    object-fit: contain;
+    filter: invert(45%) sepia(46%) saturate(120%) hue-rotate(229deg)
+      brightness(85%) contrast(600%);
+
+    @media only screen and (max-width: 950px) {
+      width: 100%;
+    }
+  }
+}
